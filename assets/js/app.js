@@ -83,6 +83,8 @@ const render = (casas) => {
 
 render(casasList);
 
+formulario.addEventListener("reset", () => render(casasList));
+
 formulario.addEventListener("submit", (ev) => {
     ev.preventDefault();
     const min = +minValue.value;
